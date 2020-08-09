@@ -17,8 +17,8 @@ import javax.ejb.*;
 @Stateless
 @LocalBean
 public class ConverterBean {
-    private BigDecimal yenRate = new BigDecimal("83.0602");
-    private BigDecimal euroRate = new BigDecimal("0.0093016");
+    private BigDecimal yenRate = new BigDecimal("105.89");
+    private BigDecimal euroRate = new BigDecimal("0.0080");
 
     public BigDecimal dollarToYen(BigDecimal dollars) {
         BigDecimal result = dollars.multiply(yenRate);

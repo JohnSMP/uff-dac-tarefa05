@@ -45,6 +45,8 @@ public class ConverterServlet extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
         out.println("<h1>Conversor Servlet</h1>");
+        out.println("<p><i>Atualizado em 09/08/2020</i></p>");
+        
         try {
             String amount = request.getParameter("amount");
             if (amount != null && amount.length() > 0) {
